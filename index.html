@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- importing font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body class="preload">
+    
+    <div class="box">
+      <header class="header">
+        <h1 class="headText">Rock<br>Paper<br>Scissors</h1>
+         <div class="score">
+          <div class="your_score__title">Your score</div>
+          <div class="your_score__number">0</div>
+        </div>
+
+        <div class="comp_score">
+            <div class="comp_score__title">PC score</div>
+            <div class="comp_score__number">0</div>
+          </div>
+      </header>
+      
+      <section class="game">
+        <button class="choice-btn" data-choice="rock">
+          <div class="choice rock">
+            <img src="/assets/rock.png" alt="Rock" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="paper">
+          <div class="choice paper">
+            <img src="./assets/paper.png" alt="Paper" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="scissors">
+          <div class="choice scissors">
+            <img src="./assets/scissors.png" alt="Scissors" />
+          </div>
+        </button>
+      </section>
+    </div>
+
+    <section class="results hidden">
+      <h2 class="results__heading">You Picked</h2>
+      <h2 class="results__heading">Computer Picked</h2>
+      <div class="results__result"></div>
+      <div class="results__winner hidden">
+        <h3 class="results__text"></h3>
+        <button class="play-again">Play Again</button>
+      </div>
+      <div class="results__result"></div>
+    </section>
+
+    <button class="rules" tabindex="1">RULES</button>
+    <div class="modal">
+      <div class="modal__container">
+        
+        <header class="modal__header">
+          <h2 class="modal__heading">game rules</h2>
+          <button class="close-btn">
+            <img src="./assets/close-btn.svg" alt="Close Button" />
+          </button>
+        </header>
+        <div class="rules-text">
+          <div class="game-rules-parent">       
+            <ul style="list-style-type: square">
+              <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+              <li>Agree ahead of time whether you’ll count off “rock, paper, scissors,shoot” or just “rock, paper, scissors.”</li>
+              <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+              <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
