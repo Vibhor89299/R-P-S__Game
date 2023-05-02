@@ -164,6 +164,11 @@ color: var(--light-text);
   transform: scale(1.5);
 }
 
+.choice.rock::before {
+  background: linear-gradient(to bottom, var(--rock), var(--rock));
+  box-shadow: 0 0.5rem var(--shadow-light), 0 0.5rem var(--rock);
+}
+
 .choice.paper::before {
   background: linear-gradient(to bottom, var(--paper), var(--paper));
   box-shadow: 0 0.5rem var(--shadow-light), 0 0.5rem var(--paper);
@@ -172,10 +177,7 @@ color: var(--light-text);
   background: linear-gradient(to bottom, var(--scissors), var(--scissors));
   box-shadow: 0 0.5rem var(--shadow-light), 0 0.5rem var(--scissors);
 }
-.choice.rock::before {
-  background: linear-gradient(to bottom, var(--rock), var(--rock));
-  box-shadow: 0 0.5rem var(--shadow-light), 0 0.5rem var(--rock);
-}
+
 
 .choice-btn[data-choice="rock"] {
   grid-area: rock;
@@ -187,7 +189,6 @@ color: var(--light-text);
   grid-area: paper;
 }
 
-/* Results */
 .results {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
